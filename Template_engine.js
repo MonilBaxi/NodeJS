@@ -1,6 +1,5 @@
 const express=require('express');
 const app=express();
-
 app.set("view engine","hbs"); // set view engine as hbs(Handlebars.js) other options(pug,ejs)
 app.get('/',(req,res)=>{
     // console.log("Welcome bro!");
