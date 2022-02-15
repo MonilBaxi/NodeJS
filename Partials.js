@@ -3,7 +3,7 @@ const app=express();
 const hbs=require("hbs");
 app.set("view engine","hbs"); // set view engine as hbs(Handlebars.js) other options(pug,ejs)
 app.set("views","./custom_views/Partials"); //Custom view set up
-hbs.registerPartials("./custom_views/Partials");
+hbs.registerPartials("./custom_views/Partials"); // To register partials and fetch in Partials.js
 app.get('/',(req,res)=>{
     // console.log("Welcome bro!");
     res.render("index",{Name:"monil"}); // directly fetch from custom_views folder and render using res.render()
